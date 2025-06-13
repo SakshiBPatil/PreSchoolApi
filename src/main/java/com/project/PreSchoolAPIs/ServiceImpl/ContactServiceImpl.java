@@ -33,7 +33,7 @@ public class ContactServiceImpl implements ContactService {
 	
 	 public void sendEmail(ContactDTO contactDTO) {
 	        SimpleMailMessage message = new SimpleMailMessage();
-	        message.setTo("developer.quikhire@gmail.com");
+	        message.setTo("developer.quikhire@gmail.com","sahilbhandare80@gmail.com");
 	        message.setSubject("New Contact Form Submission: " + contactDTO.getSubject());
 	        message.setText("Name: " + contactDTO.getName() +
 	                "\nEmail: " + contactDTO.getEmail() +
